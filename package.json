@@ -27,7 +27,6 @@
     "popper": "^1.0.1",
     "pug": "^3.0.0"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "node": "nodemon src/routes/router.js",
@@ -38,5 +37,8 @@
     "url": "https://code.assemblerschool.com/guillherme-carra/Node.js-Web-MVC.git"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "sonarqube-scanner": "^4.0.1"
+  }
 }

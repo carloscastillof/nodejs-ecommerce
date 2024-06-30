@@ -1,52 +1,49 @@
-# e-commerce with Node.js (MVC Pattern)
----
-## Overview
-This project is focused in develop a Web MVC application using node.js, mysql and related technologies. It consists of a client facing web application that users can connect to in order to see the products being sold and make purchases, a dashboard frontend application that the employees can use to perform CRUD operations on the product catalog of the application, and a backend server that will be used to host api endpoints and the database to store all the information.
+# misw4410-2024-13-modernizacion-sw
 
-## Screenshots
+Repositorio que contiene la aplicación legado para modernizar.
 
-![img](https://live.staticflickr.com/65535/50505312657_4afb5400e1_h.jpg)
+## Importante
 
-## Getting Started
-After cloning this repository, excute the folowing commands to test it:
+Para ejecutar el proyecto, hay que tener en cuenta lo siguientes versiones:
 
-* Installing dependencies:
-````
-npm install
-````
-* Configure your **.env** file:
-````
-Based on the file ".env.example"
-````
-* Creating a database:
-````
-mysql > create database "name in your .env file"
-````
-* Populating the database:
-````
-npm run database
-````
-* Starting the server (on port specified in the **.env** file):
-````
-npm run node
-````
-## Credentials
-The "database script" populates some **users** on DB with different roles. Use the following examples:
-* Regular user
-````
+- Node: 10.24.1
+- Npm: 6.14.12
+
+### Ejecución del proyecto
+
+Debido a que el proyecto es antiguo, puede que la ejecución de este falle con el comando `npm run node`, por lo tanto ejecute: `npx nodemon index.js`
+
+Para levantar la base de datos, ejecute `docker compose up` y posteriormente `npm run database`
+
+### Credenciales
+
+Por defecto se crean estos Usuarios con diferentes roles:
+
+- Usuario común
+
+```
 email: user@user.com
 password: 123456
-````
-* Employee
-````
+```
+
+- Empleado
+
+```
 email: employee@employee.com
 password: 123456
-````
-* Admin
-````
+```
+
+- Administrador
+
+```
 email: admin@admin.com
 password: 123456
-````
-## Author
+```
 
-* **Guilherme Carra** - [GitHub](https://github.com/GuilhermeCarra/) - [Glitch](https://glitch.com/@GuilhermeCarra/) - [Linkedin](https://www.linkedin.com/in/guilherme-carra/)
+### Variables de entorno
+
+Para el correcto funcionamiento de la app, por favor realice un archivo .env en la raíz del proyecto con las variables que están en el archivo .env.example
+
+## Créditos al autor
+
+- **Guilherme Carra** - [GitHub](https://github.com/GuilhermeCarra/) - [Glitch](https://glitch.com/@GuilhermeCarra/) - [Linkedin](https://www.linkedin.com/in/guilherme-carra/)
